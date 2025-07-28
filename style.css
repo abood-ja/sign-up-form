@@ -195,3 +195,14 @@ form button:hover {
   background-color: hsl(4, 100%, 67%);
   font-size: 1.55rem;
 }
+.error-class {
+  display: flex;
+  justify-content: space-between;
+}
+.error {
+  color: hsl(4, 100%, 67%);
+}
+.error-state {
+  background-color: #ffe8e6 !important;
+  color: hsl(4, 100%, 67%) !important;
+}
