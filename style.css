@@ -51,7 +51,90 @@ body {
   margin: 10rem auto;
   max-width: 96rem;
   background-color: hsl(0, 0%, 100%);
-
   border-radius: 13px;
-  gap: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 100fr 89fr;
+  padding: 2rem;
+}
+.form-img {
+  text-align: right;
+  width: 100%;
+}
+.form {
+  padding: 3rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-title {
+  padding-top: 7rem;
+  font-size: 5.5rem;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 2.3rem;
+}
+.form-description {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+  color: hsl(235, 18%, 26%);
+}
+.form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.form-list li {
+  color: hsl(235, 18%, 26%);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 1.4rem;
+}
+.form-list li:last-child {
+  margin-bottom: 4rem;
+}
+.list-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 1.25rem;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+form input,
+form button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  /* font-size: 1.6rem; */
+}
+form input {
+  font-size: 1.4rem;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+form button {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  /* font-weight: 450; */
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-color: hsl(4, 100%, 67%);
+  font-size: 1.7rem;
 }
