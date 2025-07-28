@@ -47,17 +47,30 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+.hidden {
+  display: none !important;
+}
 .container {
   margin: 10rem auto;
-  max-width: 96rem;
+  /* max-width: 96rem; */
   background-color: hsl(0, 0%, 100%);
   border-radius: 13px;
+}
+.container--1 {
+  max-width: 96rem;
+}
+.container--2 {
+  max-width: 40rem;
+  padding: 3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
 .grid {
   display: grid;
   grid-template-columns: 100fr 89fr;
   padding: 2rem;
 }
+
 .form-img {
   text-align: right;
   width: 100%;
@@ -126,9 +139,10 @@ form input {
   border: 1px solid hsl(231, 7%, 60%);
 }
 form button {
+  border: none;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  /* font-weight: 450; */
+  font-weight: 450;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
@@ -137,4 +151,47 @@ form button {
 form button:hover {
   background-color: hsl(4, 100%, 67%);
   font-size: 1.7rem;
+}
+/* message styling             */
+.flex {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 2rem;
+}
+.img {
+  height: 4rem;
+  width: 4rem;
+  /* margin-bottom: 2.5rem; */
+}
+.message-title {
+  line-height: 1;
+  font-size: 5rem;
+  color: hsl(234, 29%, 20%);
+  /* margin-bottom: 2rem; */
+}
+.message-description {
+  line-height: 1.4;
+  font-size: 1.35rem;
+}
+.message-description span {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+.message-btn {
+  padding: 1.3rem;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.message-btn:hover {
+  background-color: hsl(4, 100%, 67%);
+  font-size: 1.55rem;
 }

@@ -23,7 +23,7 @@
     </title>
   </head>
   <body>
-    <div class="container grid">
+    <div class="container container--1 grid grid--1">
       <div class="form">
         <h2 class="form-title">Stay updated!</h2>
         <p class="form-description">
@@ -78,10 +78,20 @@
     </div>
 
     <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
+    <div class="container container--2 flex hidden">
+      <img
+        src="assets/images/icon-success.svg"
+        alt="success icon"
+        class="img"
+      />
+      <h2 class="message-title">Thanks for subscribing!</h2>
+      <p class="message-description">
+        A confirmation email has been sent to
+        <span>ash@loremcompany.com.</span> Please open it and click the button
+        inside to confirm your subscription.
+      </p>
+      <button class="message-btn">Dismiss message</button>
+    </div>
 
     <!-- Success message end -->
     <script src="script.js"></script>
