@@ -50,6 +50,7 @@ body {
 .hidden {
   display: none !important;
 }
+/* ------------------  first div  --------- */
 .container {
   margin: 10rem auto;
   /* max-width: 96rem; */
@@ -73,6 +74,9 @@ body {
 
 .form-img {
   text-align: right;
+  width: 100%;
+}
+.form-img img {
   width: 100%;
 }
 .form {
@@ -205,4 +209,69 @@ form button:hover {
 .error-state {
   background-color: #ffe8e6 !important;
   color: hsl(4, 100%, 67%) !important;
+}
+@media (max-width: 43.75em) {
+  .container {
+    width: 90%;
+  }
+  .grid {
+    padding: 1.5rem;
+  }
+
+  .form-title {
+    font-size: 3.2rem;
+    padding-top: 2.5rem;
+    margin-bottom: 1.9rem;
+  }
+  .form-description {
+    font-size: 1.3rem;
+    margin-bottom: 1.9rem;
+  }
+  .form-list li {
+    gap: 1rem;
+    font-size: 1.3rem;
+  }
+  .form-list li:last-child {
+    margin-bottom: 1.8rem;
+  }
+  form label {
+    font-size: 1rem;
+  }
+  form input,
+  form button {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 37em) {
+  .grid {
+    padding: 1.2rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+    padding-top: 2.5rem;
+    margin-bottom: 1.4rem;
+  }
+  .form-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+  }
+  .form-list li {
+    gap: 0.75rem;
+    font-size: 1.1rem;
+  }
+  .form-list li:last-child {
+    margin-bottom: 1.45rem;
+  }
+  form label {
+    font-size: 0.8rem;
+  }
+  form input,
+  form button {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding: 0.7rem;
+  }
 }
